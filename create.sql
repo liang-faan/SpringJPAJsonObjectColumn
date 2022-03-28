@@ -1,0 +1,3 @@
+create sequence hibernate_sequence start with 1 increment by 1;
+create table parameter (id bigint not null, create_dt timestamp, created_by varchar(255), end_date_time timestamp, start_date_time timestamp, status varchar(255), update_dt timestamp, updated_by varchar(255), param_name varchar(255), param_value varchar(255), primary key (id));
+create table product (id bigint not null, create_dt timestamp, created_by varchar(255), end_date_time timestamp, start_date_time timestamp, status varchar(255), update_dt timestamp, updated_by varchar(255), product_desc varchar(255), product_id varchar(255), product_parameter jsonb, primary key (id));
